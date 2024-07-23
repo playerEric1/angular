@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand navbar-light">
+  <div class="container">
+    <a class="nav-link" [routerLink]="['']" routerLinkActive="active"><img src="assets/favicon.ico" alt="logo" width="50" height="50"></a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Orders']" routerLinkActive="active">Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Categories']" routerLinkActive="active">Categories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Account/Login']" routerLinkActive="active">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Account/Register']" routerLinkActive="active">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>

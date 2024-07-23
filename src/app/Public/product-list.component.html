@@ -1,0 +1,11 @@
+<h2>product-list</h2>
+<div *ngFor = "let product of this.productList">
+  <p> id: {{product.id}} </p>
+  <p> name: {{product.name}} </p>
+</div>
+
+<div *ngIf="this.productList.length < 10">
+  <p> There are less than 10 products </p>
+</div>
+
+<input type="text" [(ngModel)]="productList[1].name" placeholder="">
